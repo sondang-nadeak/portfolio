@@ -1833,6 +1833,10 @@ input, select, textarea {
 	text-align: center;
 	margin-bottom: 100px;
   }
+  section a{
+	  text-decoration: none;
+  }
+	
   section#first, section#second, section#third, section#fourth, section#fifth{
 	border: 1px solid white;
   }
