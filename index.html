@@ -331,7 +331,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Sondang Nadeak. Custom: <a href="https://html5up.net">Sondang Nadeak</a>.</p>
+						<p class="copyright">&copy; <span id="currentYear"></span> | Sondang Nadeak.</p>
 					</footer>
 
 			</div>
@@ -345,6 +345,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		        <script>
+				function displayYear() {
+					var yearElement = document.getElementById("currentYear");
+					var currentYear = new Date().getFullYear();
+					yearElement.innerHTML = currentYear;
+				}
+			</script>
 
 	</body>
 </html>
