@@ -398,10 +398,5 @@
 						$main._show(location.hash.substr(1), true);
 					});
 
-	function handleFormSubmission() {
-            // Menangani pengalihan setelah formulir dikirim
-            alert("Email berhasil dikirim! Terima kasih.");
-            window.location.href = "https://sondang-nadeak.github.io/portfolio/#contact"; // Ganti dengan URL halaman Anda
-            return false; // Mencegah formulir dikirim secara langsung (jika diperlukan)
-        }
+
 })(jQuery);
