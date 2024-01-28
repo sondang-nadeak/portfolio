@@ -273,9 +273,14 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
-								<?php if (isset($confirmation_message)) : ?>
-									<p><?php echo $confirmation_message; ?></p>
-								<?php endif; ?>
+								<script>
+								        function handleFormSubmission() {
+								            // Menangani pengalihan setelah formulir dikirim
+								            alert("Email berhasil dikirim! Terima kasih.");
+								            window.location.href = "https://sondang-nadeak.github.io/portfolio/#contact"; // Ganti dengan URL halaman Anda
+								            return false; // Mencegah formulir dikirim secara langsung (jika diperlukan)
+								        }
+								</script>
 								<ul class="icons">
 									<li><a href="http://wa.me//+6282281075446" target="_blank" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
 									<li><a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BADHB2kBlQ9OScBwog7Axdw%3D%3D" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
