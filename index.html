@@ -252,7 +252,7 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="https://formspree.io/f/mqkrewpo" onsubmit="handleFormSubmission()">
+								<form method="post" action="https://formspree.io/f/mqkrewpo" onsubmit="handleFormSubmission(event)">
 									
 									<div class="fields">
 										<div class="field half">
@@ -346,7 +346,8 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-				function handleFormSubmission() {
+				function handleFormSubmission(event) {
+					event.preventDefault();
 					// Menangani pengalihan setelah formulir dikirim
 					alert("Email berhasil dikirim! Terima kasih.");
 					window.location.href = "https://sondang-nadeak.github.io/portfolio/#contact"; // Ganti dengan URL halaman Anda
